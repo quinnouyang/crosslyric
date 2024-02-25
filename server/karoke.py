@@ -118,7 +118,8 @@ SP = Separator(
 
 
 def remove_vocals(x: np.ndarray, tta: bool = True) -> np.ndarray:
-    x = np.asarray([x, x])  # Mono to stereo
+    if x.ndim == 1:
+        x = np.array([x, x])
 
     print(x.shape)
 
@@ -139,4 +140,4 @@ def remove_vocals(x: np.ndarray, tta: bool = True) -> np.ndarray:
     wave = spec_utils.spectrogram_to_wave(y_spec, hop_length=HOP_LENGTH)
     print("done")
 
-    return librosa.to_mono(wave)
+    return wave.T
