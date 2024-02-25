@@ -6,6 +6,7 @@
 
 - [MusixMatch](https://developer.musixmatch.com/) - Fetch lyrics
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#embedding-yt-dlp) - Fetch audio
+- [vocal-remover](https://github.com/tsurumeso/vocal-remover) - What else would it do?
 
 # Client
 
