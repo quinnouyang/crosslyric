@@ -1,3 +1,5 @@
+*.env
+
 # This can die
 **/.DS_Store
 
