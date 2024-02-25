@@ -4,6 +4,9 @@
 
 > You are served!
 
+- [MusixMatch](https://developer.musixmatch.com/) - Fetch lyrics
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#embedding-yt-dlp) - Fetch audio
+
 # Client
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
