@@ -14,7 +14,8 @@
     "@jaredreisinger/react-crossword": "^5.2.0",
     "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "use-sound": "^4.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
