@@ -12,7 +12,7 @@ assert SP_DC
 SP = Spotify(SP_DC)
 
 
-def lyrics(id: str) -> list[tuple[int, str]]:
+def timestamped_lyrics(id: str) -> list[tuple[int, str]]:
     return [
         (int(lines["startTimeMs"]), lines["words"])
         for lines in SP.get_lyrics(id)["lyrics"]["lines"]
@@ -20,4 +20,4 @@ def lyrics(id: str) -> list[tuple[int, str]]:
 
 
 if __name__ == "__main__":
-    pprint(lyrics("2Zo1PcszsT9WQ0ANntJbID"))
+    pprint(timestamped_lyrics("2Zo1PcszsT9WQ0ANntJbID"))

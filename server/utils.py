@@ -24,14 +24,17 @@ def sound(x: np.ndarray, sr: float, label="") -> None:
 
 
 def sounds(
-    sounds: list[np.ndarray], sr: int | list[int], labels: list[str] = [], title=""
+    sounds: list[np.ndarray],
+    sr: float | int | list[float | int],
+    labels: list[str] = [],
+    title="",
 ) -> None:
     if title:
         print(title)
 
     labels.extend([""] * (len(sounds) - len(labels)))
 
-    if isinstance(sr, int):
+    if isinstance(sr, (float, int)):
         sr = [sr] * len(sounds)
 
     for x, s, l in zip(sounds, sr, labels):

@@ -1,7 +1,6 @@
 import os
 import numpy as np
 import torch
-import librosa
 
 from tqdm import tqdm
 from vocal_remover.lib import dataset, nets, spec_utils
