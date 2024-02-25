@@ -1,3 +1,5 @@
+# Modified from https://github.com/tsurumeso/vocal-remover/blob/develop/inference.py
+
 import os
 import numpy as np
 import torch
