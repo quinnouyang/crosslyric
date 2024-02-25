@@ -4,7 +4,7 @@ import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Crosslyric",
-  description: "A crossword, but on your favorite music lyrics!",
+  description: "The crossword for your ears",
 };
 
 export default function RootLayout({

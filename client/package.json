@@ -11,6 +11,7 @@
   "dependencies": {
     "@chakra-ui/next-js": "^2.2.0",
     "@chakra-ui/react": "^2.8.2",
+    "@jaredreisinger/react-crossword": "^5.2.0",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18"

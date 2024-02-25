@@ -1,0 +1,82 @@
+{
+  "1.wav": {
+    "answer": "youwantme",
+    "hint": [
+      "Where I'm at, I'm up where I'm at",
+      "___ ____ __? I'm done",
+      "You miss me? No, duh"
+    ]
+  },
+  "2.wav": {
+    "answer": "feather",
+    "hint": [
+      "More than two hours in advance, hmm",
+      "I slam the door, I hit ignore",
+      "I'm saying, no, no, no, no more"
+    ]
+  },
+  "3.wav": {
+    "answer": "sendapic",
+    "hint": [
+      "You're a waste of time, ahh",
+      "You fit every stereotype, ____ _ ___",
+      "I feel so much lighter like a feather with you out my life"
+    ]
+  },
+  "4.wav": {
+    "answer": "hoursinadvance",
+    "hint": [
+      "Then you pull back, when I try to make plans",
+      "More than two _____ __ _______, hmm",
+      "I slam the door, I hit ignore"
+    ]
+  },
+  "5.wav": {
+    "answer": "youwantme",
+    "hint": [
+      "Where I'm at, I'm up where I'm at",
+      "__ _____ __? I'm done",
+      "You miss me? No, duh"
+    ]
+  },
+  "6.wav": {
+    "answer": "wherei'mat",
+    "hint": [
+      "You miss me? No, duh",
+      "_____ ___ __, I'm up where I'm at",
+      "You want me? I'm done"
+    ]
+  },
+  "7.wav": {
+    "answer": "wasteoftime",
+    "hint": [
+      "Floatin' through the memories like whatever",
+      "You're a _____ __ ____, ahh",
+      "You fit every stereotype, send a pic"
+    ]
+  },
+  "8.wav": {
+    "answer": "i'mdone",
+    "hint": [
+      "Like a feather, like a feather, like a feather",
+      "You want me? ___ ____",
+      "You miss me? No, duh"
+    ]
+  },
+  "9.wav": {
+    "answer": "wasteoftime",
+    "hint": [
+      "Floatin' through the memories like whatever",
+      "You're a _____ __ ____, ahh",
+      "Your signals are mixed, you act like a bitch"
+    ]
+  },
+  "10.wav": {
+    "answer": "cutyouoff",
+    "hint": [
+      "After this, an afterthought",
+      "I finally ___ ___ ___",
+      "I feel so much lighter like a feather with you off my mind, ahh"
+    ]
+  }
+}
