@@ -1,4 +1,4 @@
-# hack? idk yet
+# hack? idk
 
 # Server
 
