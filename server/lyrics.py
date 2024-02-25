@@ -1,31 +1,23 @@
-import requests
+from pprint import pprint
+from syrics.api import Spotify
 from os import getenv
 from dotenv import load_dotenv
 
 load_dotenv()
 
-URL = getenv("MUSIXMATCH_URL")
-KEY = getenv("MUSIXMATCH_KEY")
-MATCHER_SUBPATH = "matcher.track.get"
-LYRICS_SUBPATH = "track.lyrics.get"
+SP_DC = getenv("SPOTIFY_SP_DC")
 
-assert URL and KEY
+assert SP_DC
+
+SP = Spotify(SP_DC)
 
 
-def intro_lyrics(title: str, artist: str) -> str:
-    id = requests.get(
-        URL + MATCHER_SUBPATH,
-        params={
-            "apikey": KEY,
-            "q_artist": artist,
-            "q_track": title,
-        },
-    ).json()["message"]["body"]["track"]["track_id"]
+def lyrics(id: str) -> list[tuple[int, str]]:
+    return [
+        (int(lines["startTimeMs"]), lines["words"])
+        for lines in SP.get_lyrics(id)["lyrics"]["lines"]
+    ]
 
-    assert isinstance(id, int)
 
-    lyrics = requests.get(
-        URL + LYRICS_SUBPATH, params={"apikey": KEY, "track_id": id}
-    ).json()["message"]["body"]["lyrics"]["lyrics_body"]
-
-    return lyrics
+if __name__ == "__main__":
+    pprint(lyrics("2Zo1PcszsT9WQ0ANntJbID"))
