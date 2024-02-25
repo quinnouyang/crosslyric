@@ -1,3 +1,6 @@
+# This can die
+**/.DS_Store
+
 # Logs
 logs
 *.log
@@ -16,9 +19,14 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Python hates me
+**/*.ipynb_checkpoints
+**/*.pyc
+**/__pycache__/
+**/.python-version
