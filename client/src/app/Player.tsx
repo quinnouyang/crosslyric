@@ -1,9 +1,13 @@
 import { BellIcon } from "@chakra-ui/icons";
 import { Button } from "@chakra-ui/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Player({ path }: { path: string }) {
-  const [audio, setAudio] = useState(new Audio(path));
+  const [audio, setAudio] = useState(null);
+
+  useEffect(() => {
+    setAudio(new Audio(path)); // only call client
+  }, []);
 
   return (
     <Button onClick={() => audio.play()}>

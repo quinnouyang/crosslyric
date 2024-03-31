@@ -1,4 +1,4 @@
-// app/page.tsx
+// @ts-ignore
 "use client";
 import Crossword from "@jaredreisinger/react-crossword";
 import data from "./crossword";

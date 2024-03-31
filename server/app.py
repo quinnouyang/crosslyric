@@ -3,6 +3,7 @@ from contextlib import suppress
 from PIL import Image
 from random import randint
 from typing import TypedDict, Any
+from crosslyric import generate
 
 app = Flask(__name__)
 
@@ -62,3 +63,8 @@ def PUT_registerClient(client_id: str) -> Response:
             )
 
     return make_response("Bad request", 400)
+
+
+@app.route("/generate")
+def GET_generate(youtube_url: str, track_id: str) -> Response:
+    pass
